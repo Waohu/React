@@ -1,6 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import HomePage from "./pages/users/HomePage";
+import { BrowserRouter } from 'react-router-dom';
+import RouterCustom from './router'; 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render( <h1> Wahu </h1>
+
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <RouterCustom />
+  </BrowserRouter>,
+
 );
