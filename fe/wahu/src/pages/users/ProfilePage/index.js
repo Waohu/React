@@ -1,10 +1,7 @@
-import {memo } from "react";
-import MasterLayout from '../theme/MasterLayout';
-const profilePage = () => {
+import { memo } from "react";
+const ProfilePage = () => {
     return (
-        <h1> profilePage </h1>
-        
+        <h1>ProfilePage</h1>
     );
-
 };
-export default memo ( profilePage );
+export default memo( ProfilePage);

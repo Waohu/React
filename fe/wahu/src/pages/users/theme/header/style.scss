@@ -1,0 +1,203 @@
+@keyframes FadeIn {
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.header__top {
+    background-color: #ccc;
+    padding: 10px 50px;
+
+    .header__top_left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .contact-text {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+
+            svg {
+                font-size: 17px;
+            }
+        }
+
+        p:last-child {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left;
+        }
+    }
+
+    .header__top_right {
+        display: flex;
+        justify-content: flex-end;
+
+        ul {
+            display: flex;
+            column-gap: 15px;
+            list-style: none;
+            align-items: center;
+
+            svg {
+                font-size: 25px;
+            }
+
+            li {
+                color: #888;
+            }
+        }
+    }
+}
+
+.header__bottom {
+    background-color: rgb(67, 47, 47); // Màu nền đen
+    color: white; // Màu chữ trắng
+    // padding: 10px 0;
+    // padding-top: 12px;
+    position: relative;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .row {
+            justify-content: space-around;
+            width: 100%;
+            display: flex;
+
+        }
+    }
+
+    .highlighted-text {
+        font-size: 20px; // Kích thước chữ to hơn
+        font-weight: bold; // Chữ đậm
+        padding: 0 12px;
+
+        line-height: 100%;
+    }
+
+    .header__bottom_logo {
+        text-decoration: none;
+        color: #f5a803;
+
+        .logo-text {
+            font-size: 50px;
+
+        }
+    }
+
+    .header__bottom_menu,
+    .header__bottom_store {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        border: solid 2px #69311b;
+        border-radius: 50px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .header__bottom_store{
+        padding-top: 2px;
+    }
+
+    .header__bottom_menu {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .header__bottom_menu_text {
+            margin-right: 10px;
+        }
+
+
+    }
+
+    .header__bottom_dropdown {
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: rgba(200, 200, 200, 0.9);
+        color: #333;
+        padding: 10px;
+        z-index: 1000;
+        top: 100%;
+        width: 100%;
+        animation: FadeIn .5s ease-in;
+        padding-top: 24px;
+
+
+        .dropdown-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 250px;
+            display: flex;
+            justify-content: space-evenly;
+
+            .dropdown_item {
+                margin-bottom: 5px;
+                font-size: 30px;
+                position: relative;
+            }
+
+        }
+
+        .submenu {
+            display: block; // Hiển thị submenu một cách mặc định
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            border-radius: 4px;
+
+            border-top: 4px solid #0b014d;
+            margin-top: 20px;
+
+            .submenu-list {
+
+                list-style: none;
+                padding: 0;
+                margin: 32px 0;
+
+                .submenu-item {
+
+                    margin: 18px 0;
+                    font-size: 14px;
+                    cursor: pointer;
+                    transition: color 0.3s ease-in-out;
+                }
+
+                .submenu-item:hover {
+                    color: #fb4343;
+                }
+            }
+        }
+
+
+        li {}
+    }
+}
+
+.slider_image {
+    object-fit: contain;
+    /* Hoặc object-fit: cover; tùy vào yêu cầu của bạn */
+    width: 100%;
+    height: 100%;
+}
