@@ -1,0 +1,51 @@
+.product-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(25% - 20px);
+    text-align: center;
+    flex: 0 0 25%;
+    font-size: 14px;
+  }
+  
+  .product-img {
+    width: 200px; /* Điều chỉnh kích thước ảnh */
+    height: 200px; /* Điều chỉnh kích thước ảnh */
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 10px;
+  }
+  
+  .product-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .product-price {
+    color: #666;
+  }
+  
+.aaa1{
+    background-image: url("./Boye/im\ \(1\).jpg");
+}
+.aaa2{
+    background-image: url("./Boye/im\ \(2\).jpg");
+}
+.aaa3{
+    background-image: url("./Boye/im\ \(3\).jpg");
+}
+.aaa4{
+    background-image: url("./Boye/im\ \(4\).jpg");
+}
+.aaa5{
+    background-image: url("./Boye/im\ \(5\).jpg");
+}
+.aaa6{
+    background-image: url("./Boye/im\ \(6\).jpg");
+}
+.aaa7{
+    background-image: url("./Boye/im\ \(7\).jpg");
+}
+.aaa8{
+    background-image: url("./Boye/im\ \(8\).jpg");
+}

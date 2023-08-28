@@ -1,0 +1,24 @@
+.slider_image {
+    object-fit: contain;
+    /* Hoặc object-fit: cover; tùy vào yêu cầu của bạn */
+    width: 100%;
+    height: 100%;
+}
+
+.product-list {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-name:hover {
+   
+    color: #b7430e;
+    /* Màu chữ khi di chuột vào */
+}
+
+.product-item:hover {
+    cursor: pointer;
+    color: #d24c0e;
+    /* Màu chữ khi di chuột vào */
+}
