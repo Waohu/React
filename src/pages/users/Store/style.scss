@@ -1,0 +1,38 @@
+.store-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  
+    .section {
+      margin-top: 20px;
+  
+      h2 {
+        color: white; // Màu chữ trắng
+      }
+    }
+  
+    .appliances-section {
+      background-color: #ffffff; // Màu nền cho phần "Thiết bị gia dụng"
+      padding: 20px;
+  
+      h2 {
+        font-size: 24px;
+      }
+    }
+  
+    .canned-products-section {
+      background-color: #fffefe; // Màu nền cho phần "Sản phẩm đồ hộp"
+      padding: 20px;
+  
+      h2 {
+        font-size: 24px;
+      }
+    }
+  }
+
+
+.home-product__item:hover {
+    cursor: pointer;
+    color: #c8ef06;
+}
